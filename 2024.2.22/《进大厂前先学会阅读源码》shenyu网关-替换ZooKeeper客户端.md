@@ -135,13 +135,7 @@ public class ZookeeperInstanceRegisterRepository implements ShenyuInstanceRegist
 
 意思其实是**旧的zkClient**保存数据时默认会把**magic header头信息**插入到数据中，导致了我们的**序列化数据失败**。而贡献者本次提交把客户端**改为了Curator客户端**，也就不会有上面插入magic header头信息的操作了。
 
-## 三、总结
 
-阅读源码时，大家瞅一眼，咦Test类咋没加**final**修饰，查看整个项目发现有挺多没加的。
-
-![微信截图_20240222114341](D:\code\z-mine\my_blog\2024.2.22\微信截图_20240222114341.png)
-
-赶紧作出自己的一份小贡献，提交一次开源pr
 
 **大家能否感受通过commit、ISSUE这种方式来阅读源码的乐趣呢，学习了知识、获得了开源贡献，何乐而不为呢**
 
